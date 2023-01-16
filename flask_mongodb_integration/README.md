@@ -8,3 +8,5 @@
   - `resource: /api/v1/employee, method: POST`
   - `resource: /api/v1/project, method: GET`
   - `resource: /api/v1/project, method: POST`
+
+### comming soon: Swagger integration
