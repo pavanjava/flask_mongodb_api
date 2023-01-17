@@ -13,4 +13,7 @@
   - `docker build -t <tag-name> .`
   - `docker run --name flask-api -p 3000:5000 <tag-name/image-name>`
 
-### comming soon: Swagger integration
+- added swagger1.0 for auto api document generation
+- after running the application please run 
+
+  - `http:\\<host>:<port>\api/spec.json`

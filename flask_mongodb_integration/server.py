@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import Api
+from flask_restful_swagger import swagger
 from src.database.db import init_db
 from src.resources.employees.routes import employee_routes
 from src.resources.projects.routes import project_routes
@@ -11,7 +12,7 @@ app.config["MONGODB_SETTINGS"] = {
     'port': 27017
 }
 
-api = Api(app)
+api = swagger.docs(Api(app), apiVersion='0.1')
 
 init_db(app)
 employee_routes(api)
